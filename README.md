@@ -45,6 +45,7 @@ Este proyecto es una **calculadora de ecuaciones** que permite ingresar coeficie
 📷 Representación matemática
 
 [Ecuación matematica](https://latex.codecogs.com/png.image?\dpi{110}\bg{white}Y=\frac{\sin(aX)&plus;\cos(bX)}{\sqrt{|X-c|}&plus;1}&plus;\frac{\cos(dX)-\sin(eX)}{\sqrt{|X-e|}&plus;1}&plus;\frac{\sin(X)\cos(X)}{X&plus;1}\)
+
 [Ecuación matematica](Ecuacion.png)
 
 ## 🛠️ Mejoras futuras  
