@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Ecuaciones</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CALCULADORA DE ECUACIONES CON GRÁFICOS Y TABLA DE VALORES</h1>
+            <h3>AUTOR@: MAIRA ALEJANDRA RODRIGUEZ VELASCO - CÓDIGO: 2216670</h3>
+        </header>
+
+        <section class="equation-section">
+        <h2>ECUACIÓN</h2>
+        <img src="Ecuacion.png" alt="Ecuación Matemática" class="ecuation-img">
+        </section>
+
+        <section class="input-section">
+        <h2>COEFICIENTES</h2>
+        <h3>Ingrese los coeficientes:</h3>
+        <div class="input-container">
+            <label>a: <input type="number" id="a" value="1"></label>
+            <label>b: <input type="number" id="b" value="1"></label>
+            <label>c: <input type="number" id="c" value="1"></label>
+            <label>d: <input type="number" id="d" value="1"></label>
+            <label>e: <input type="number" id="e" value="1"></label>
+        </div>
+        <div class="input-container">
+            <label>X min: <input type="number" id="xMin" value="-10"></label>
+            <label>X max: <input type="number" id="xMax" value="10"></label>
+        </div>
+        <button id="procesar">Procesar</button>
+        </section>
+
+        <section class="result-section">
+            <h2>RESULTADOS</h2>
+            <p class="p-color"><b>MÍNIMO Y </b></p> 
+            <p><span id="minY"></span></p>
+            <p class="p-color"><b>MÁXIMO Y </b></p>
+            <p><span id="maxY"></span></p>
+            <p class="p-color"><b>CORTES EN X </b></p>
+            <p><span id="cortesX"></span></p>
+            <p class="p-color"><b>TOTAL DE CORTES EN X</b></p>
+            <p><span id="totalCortes"></span></p>
+
+        </section>
+
+        <section class="table-section">
+            <h2>TABLA DE VALORES</h2>
+            <table id="tablaValores">
+                <thead>
+                    <tr><th>X</th><th>Y</th></tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <section class="chart-section">
+            <h2>GRÁFICO</h2>
+            <div id="chart_div" class="chart-container"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

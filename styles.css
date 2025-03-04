@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f0fc;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+    color: #6a0572;
+    font-size: 50px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2 { 
+    color: #d63384; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 { 
+    color: #235ea0; 
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+input {
+    padding: 8px;
+    border: 2px solid #d63384;
+    border-radius: 5px;
+    outline: none;
+    width: 80px;
+    text-align: center;
+}
+
+button {
+    background-color: #6a0572;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #d63384;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    background-color: white;
+    width: 100%;
+    min-width: 400px;
+}
+.table-section {
+    overflow-x: auto; /* Permite desplazamiento lateral */
+    max-width: 100%;
+}
+
+
+th, td {
+    border: 1px solid #6a0572;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #d63384;
+    color: white;
+}
+
+.chart-container {
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    overflow-x: auto; 
+
+}
+.p-color {
+    color: palevioletred;
+   }
+
+.ecuation-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border: 3px solid #6a0572;
+    border-radius: 20px;
+    background: white;
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+header, .equation-section, .input-section, .result-section, .table-section, .chart-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fafafa;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+    .input-container {
+        flex-direction: column;
+        gap: 5px;
+    }
+    input {
+        width: 100%;
+    }
+    .chart-container {
+        width: 100%;
+        height: auto;
+    }
+}
+
